@@ -1,0 +1,57 @@
+.task-item {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden; 
+  }
+  
+  .task-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .task-item span {
+    font-size: 18px;
+    color: #333;
+    max-width:900px ; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:none; 
+  }
+  
+  .task-item input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-item input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .action-icons {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .delete-symbol,
+  .edit-symbol {
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .delete-symbol:hover,
+  .edit-symbol:hover {
+    color: red;
+  }
+  
